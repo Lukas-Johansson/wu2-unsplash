@@ -12,7 +12,7 @@ module.exports = async function() {
     When I copied 'let url' and changed the githubUser to hardcoded it worked
     */
    
-    let url = `https://api.github.com/users/Hjalmar-Lundmark`;
+    let url = `https://api.github.com/users/Lukas-Johansson`;
 
 
     /* This returns a promise */
