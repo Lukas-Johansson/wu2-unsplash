@@ -1,7 +1,14 @@
-body {
+body, html {
     background-color: #000000;
     font-family: 'Open Sans', sans-serif;
+    margin: 0;
 }
+
+li, a, button, p {
+    color: #f1c19a;;
+    text-decoration: none;
+}
+
 
 .textHeader {
     text-align: center;
@@ -27,9 +34,9 @@ main {
     grid-gap: 10px;
     justify-content: center;
     align-items: center;
-    box-shadow: 0rem 0rem 0.75rem #f1c19a;
     background-color: #000000;
     color: white;
+    box-shadow: 0rem 0rem 0.75rem #f1c19a;
 }
 
 .container2 {
@@ -44,10 +51,53 @@ main {
         margin-left: 40px;
         margin-right: 40px;
     }
+
     .container2 {
         font-size: 0.75rem;
     }
+
     .text {
         font-size: 0.75em;
     }
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    color: #f1c19a;
+    padding: 0.5rem 1rem;
+    box-shadow: 0rem 0rem 0.75rem #f1c19a;
+    padding: 10px 10%;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    margin: 0;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .bild2 { display: none; margin: 0 auto;}
+    .nav_links li {
+        display: block;
+        padding: 10px 0px;
+    }
+
 }
