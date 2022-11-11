@@ -12,11 +12,12 @@ layout: base.njk
         {% endall %}
     </div>
     <div class="container2" id="info">
-        {% set length = info.length if info.length < 633 else 633 %} 
-        {% for i in range(0, length) %}
-        <p>{{ info[i].Name }}</p> 
-        <p>{{ info[i].Description }}</p>
+        {% for item in info %} 
+        <p>{{ item.Name }}</p> 
+        <p>{{ item.Description }}</p> 
+        <hr class="textline">
+        {% else %}
+        <li>This would display if the 'item' collection were empty</li>
         {% endfor %}
-
     </div>
 </main> 

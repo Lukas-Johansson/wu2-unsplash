@@ -99,5 +99,20 @@ main {
         display: block;
         padding: 10px 0px;
     }
+    .container2 {
+        font-size: 0.75rem;
+        margin-left: 40px;
+        margin-right: 40px;
 
+    }
+
+}
+
+.textline {
+    height:0.5px;
+    border-width: 0;
+    background-color: #000000;
+    color: #f1c19a;
+    padding: 0.25rem 1rem;
+    box-shadow: 0rem 0rem 0.75rem #f1c19a;
 }
